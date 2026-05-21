@@ -1,0 +1,71 @@
+/* header.jsx css */
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: lightskyblue;
+}
+.website-logo{
+    width: 100%;
+    max-width:  200px;
+    padding: 25px;
+}
+.nav-link{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.unorder-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    padding-left: 170px;
+    gap: 30px;
+}
+.logout-btn-desktop{
+    border: none;
+    width: 90px;
+    margin: 20px 20px;
+    border-radius: 10px;
+    background-color: lightblue;
+    font-family: "Roboto";
+    cursor: pointer;
+}
+.logout-btn-mobile{
+    display: none;
+}
+.nav-bar-mobile{
+    display: none;
+}
+@media screen and (max-width:768px) {
+    .nav-bar-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: lightskyblue;
+    }
+    .nav-bar-logo-continer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .website-logo-mobile{
+        width: 40%;
+    }
+    .unorder-list-mobile{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+    .logout-btn-mobile{
+        display: block;
+        justify-content: end;
+    }
+    .nav-bar{
+        display: none;
+    }
+}
