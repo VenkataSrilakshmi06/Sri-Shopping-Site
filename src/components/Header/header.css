@@ -43,15 +43,19 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        background-color: lightskyblue;
+        
+        width: 100%;
+        height: auto;
     }
     .nav-bar-logo-continer{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        
     }
     .website-logo-mobile{
         width: 40%;
+        padding: 20px;
     }
     .unorder-list-mobile{
         list-style: none;
@@ -59,11 +63,22 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 90%;
+        background-color: lightskyblue;
+        width: 100%;
+        text-align: center;
+        padding: 20px 30px;
+    }
+    .icon-mobile{
+        font-size: 25px;
     }
     .logout-btn-mobile{
         display: block;
-        justify-content: end;
+        justify-content: space-between;
+        background-color: white;
+        border: none;
+        margin: 20px;
+        font-size: 30px;
+        color: grey;
     }
     .nav-bar{
         display: none;

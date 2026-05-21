@@ -1,8 +1,14 @@
 import React from 'react'
 import Header from '../Header/Header'
 import './home.css'
+import { useNavigate } from 'react-router-dom'
+import Cookies from 'js-cookie'
 
 const Home = () => {
+  const navigate = useNavigate()
+  const onClickShop = () =>{
+    navigate('../product')
+  }
   return (
     <div>
       <Header/>
@@ -22,7 +28,7 @@ const Home = () => {
             that way you are. So, celebrate the seasons new and exciting fashion
             in your own way.
           </p>
-          <button type="button" className="shop-now-button">
+          <button type="button" className="shop-now-button" onClick={onClickShop}>
             Shop Now
           </button>
         </div>
